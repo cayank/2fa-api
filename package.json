@@ -1,16 +1,17 @@
 {
   "name": "2fa-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Check it by logging into your account via using 2-FA key",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cayanxk/2fa-api.git"
   },
-  "author": "Çayan <cayankrmzgul@gmail.com>",
+  "author": "Çayan K. <cayanfcbk@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cayanxk/2fa-api/issues"
