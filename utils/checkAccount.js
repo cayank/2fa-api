@@ -14,7 +14,7 @@ const checkAccount = async (email, password, secretKey) => {
     return { code: 400, message: "Missing field required", field: "secretKey" };
 
   const getKey = twofactor.generateToken(userAccount.secretKey);
-  if (process.env.NODE_ENV === "development") {
+  if (process.env.NODE_ENV === "dev") {
     console.log(JSON.stringify(getKey));
   }
 
