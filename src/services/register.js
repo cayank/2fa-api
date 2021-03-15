@@ -1,5 +1,5 @@
 const User = require("../models/User");
-const { checkBody } = require("../utils/checkBody");
+const { checkBody } = require("../../utils/checkBody");
 
 const userRegister = async (req, res, next) => {
   try {
