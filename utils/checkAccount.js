@@ -1,4 +1,4 @@
-const User = require("../models/User");
+const User = require("../src/models/User");
 const twofactor = require("node-2fa");
 
 const checkAccount = async (email, password, secretKey) => {
@@ -21,6 +21,4 @@ const checkAccount = async (email, password, secretKey) => {
   }
 };
 
-module.exports = {
-  checkAccount,
-};
+module.exports = { checkAccount };
