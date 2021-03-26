@@ -1,5 +1,5 @@
 # 2fa-api
-This rest API checks its data when it checks the entered body. To create a 2-FA key you need to have your own secret key by using Google Authenticator or somewhat.
+This rest API checks its body when requested. To create a 2-FA key you need to have your own secret key by using Google Authenticator or somewhat.
 
 ## Starting the server
 Make sure you set the necessary environment variables. You can take a look at `.env.example` file for the variables.
@@ -32,9 +32,9 @@ To login:
     Content-Type: application/json
 
     {
-    "email": "cayan@gmail.com",
-    "password": "cayan123",
-    "secretKey": "294016"
+      "email": "cayan@gmail.com",
+      "password": "cayan123",
+      "secretKey": "294016"
     }
     
 It generates a number as 6 digits after entering the secret key in your Google Authenticator application or anything.
