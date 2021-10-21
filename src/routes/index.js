@@ -1,5 +1,5 @@
-var fs = require("fs");
-var routerFiles = fs.readdirSync(__dirname + "/api");
+const fs = require("fs");
+const routerFiles = fs.readdirSync(__dirname + "/api");
 /**
  * @param app Express app
  */
