@@ -1,12 +1,8 @@
-const { checkAccount } = require("../../utils/checkAccount");
+const checkAccount = require("../../utils/checkAccount");
 
-const userLogin = async (req, res, next) => {
+const userLogin = async (req, res) => {
   try {
-    const getResult = await checkAccount(
-      req.body.email,
-      req.body.password,
-      req.body.secretKey
-    );
+    const getResult = await checkAccount(req.body);
 
     if (getResult) return res.status(getResult.code).json(getResult);
   } catch (err) {
@@ -17,6 +13,4 @@ const userLogin = async (req, res, next) => {
   }
 };
 
-module.exports = {
-  userLogin,
-};
+module.exports = userLogin;

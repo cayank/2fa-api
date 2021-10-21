@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const serviceLogin = require("../services/login");
+const userLogin = require("../services/login");
 const { check, validationResult } = require("express-validator");
 
 router.post(
@@ -8,7 +8,7 @@ router.post(
     check("email", "You should enter a valid email").isEmail(),
     check("password", "Password must be 6 characters").isLength({ min: 6 }),
   ],
-  serviceLogin.userLogin
+  userLogin
 ),
   async (req, res) => {
     const errors = validationResult(req);

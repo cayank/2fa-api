@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cayanxk/2fa-api.git"
+    "url": "git+https://github.com/cayank/2fa-api.git"
   },
-  "author": "Çayan K. <cayanfcbk@gmail.com>",
+  "author": "Çayan K.>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cayanxk/2fa-api/issues"
+    "url": "https://github.com/cayank/2fa-api/issues"
   },
-  "homepage": "https://github.com/cayanxk/2fa-api#readme",
+  "homepage": "https://github.com/cayank/2fa-api#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-validator": "^6.10.0",

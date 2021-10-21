@@ -1,7 +1,7 @@
 const User = require("../models/User");
-const { checkBody } = require("../../utils/checkBody");
+const checkBody = require("../../utils/checkBody");
 
-const userRegister = async (req, res, next) => {
+const userRegister = async (req, res) => {
   try {
     const { username, email, password, secretKey } = req.body;
 
@@ -32,6 +32,4 @@ const userRegister = async (req, res, next) => {
   }
 };
 
-module.exports = {
-  userRegister,
-};
+module.exports = userRegister;
