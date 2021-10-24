@@ -1,4 +1,4 @@
-const checkBody = ({ username, email, password } = body) => {
+const checkBody = ({ username, email, password }) => {
   if (!username || username == "")
     return {
       code: 400,

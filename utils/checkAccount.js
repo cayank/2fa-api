@@ -2,7 +2,7 @@ require("dotenv/config");
 const User = require("../src/models/User");
 const twofactor = require("node-2fa");
 
-const checkAccount = async ({ email, password, secretKey } = body) => {
+const checkAccount = async ({ email, password, secretKey }) => {
   const userAccount = await User.findOne({ email: email });
   if (!userAccount) return { code: 404, message: "Email is not found" };
 
