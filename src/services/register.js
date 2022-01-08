@@ -12,10 +12,10 @@ const userRegister = async (req, res) => {
     if (user) return res.status(409).json({ message: "Email already exists" });
 
     const userDetails = new User({
-      username: username,
-      email: email,
-      password: password,
-      secretKey: secretKey,
+      username,
+      email,
+      password,
+      secretKey,
     });
 
     const result = await userDetails.save();
